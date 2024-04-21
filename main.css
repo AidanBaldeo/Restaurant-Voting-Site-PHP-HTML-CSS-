@@ -1,0 +1,294 @@
+@font-face {
+  font-family: 'Minecraft';
+  src: url('minecraft.ttf') ;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-image: url('background3.png');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-size: 28px;
+	font-family: Minecraft;
+}
+		
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+}
+
+#buttons{
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+
+}
+#buttons:hover{
+	color: #f8d691;
+}
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+#nav-bar img {
+  width: 75px;
+  height: auto;
+}
+#nav-bar{
+	display: flex;
+	flex-direction: row;
+	background-color: #333;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#centertext{
+	color: white;
+	font-size: 50px;
+}
+
+
+.submitbutton {
+	color: black;
+}
+
+#hangingSign{
+	margin: 0 auto;
+	width: 300px;
+	height: 350px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("sign.png");
+}
+
+#hangingSign span{
+	line-height: 1.4;
+	color: black;
+	text-align: center;
+	font-size: 24px;
+}
+
+#hangingSignContent{
+	display: flex;
+	flex-direction: column;
+	padding-top: 180px;
+	width: 100%;
+}
+
+#hangingSignContainer {
+	width: 100%;
+}
+
+.button img{
+	border: 10px solid #7e5d48;
+}
+
+input[type="radio"] {
+    display: none;
+}
+input[type="radio"]:checked + .button img{
+    border: 5px solid #efd490;
+}
+
+.bideshi {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.button {
+	width: 500px;
+	border: 7px soild #7e5d48;
+}
+
+.bideshi label {
+	width: 500px;
+	margin-bottom: 80px;
+}
+
+.overlay {
+  position: absolute;
+	margin-top: -110px;
+  background-color: #008CBA;
+  opacity: 0.8;
+  overflow: hidden;
+  width: 0;
+  height: 100px;
+  transition: .5s ease;
+}
+
+.button:hover .overlay {
+  width: 500px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+.linputs{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.linputs input {
+	width: 310px;
+	height: 50px;
+	background: transparent;
+	border: none;
+	margin-bottom: 5px;
+	font-family: Minecraft;
+	font-size: 20px;	
+	color: white;
+}
+
+.linputs input:-webkit-autofill, .linputs input:-webkit-autofill:hover, .linputs input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white;
+  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.linputs span {
+	width: 90px;
+	margin-left: 15px;
+}
+
+.loginform {
+	display: flex;
+	flex-direction: column;
+	margin-left: -20px;
+}
+
+#login {
+	margin-bottom: 20px;
+}
+
+#logincontent {
+	width: 440px;
+	height: 420px;
+	background-image: url("enchant-2.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding: 10px 40px;
+	border-radius: 8px;
+}
+
+#logincontent button {
+	font-family: Minecraft;
+	font-size: 20px;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("minecraftbutton1.png");
+	background-color: transparent;
+}
+
+#logincontent button:active {
+	color: white;
+	background-image: url("minecraftbutton2.png");
+}
+
+
+	table {
+	    border-collapse: collapse;
+	    width: 50%;
+	    margin: auto;
+	}
+	th, td {
+	    border: 1px solid #7e5d48;
+	    text-align: left;
+	    padding: 8px;
+	}
+	th {
+	    background-color: #4c3226;
+	    color: #fff;
+	}
+	tr:nth-child(even) {
+	    background-color: #d1aba1;
+	}
+	tr:nth-child(odd) {
+	    background-color: #ecd8c6;
+	}
+
+#content {
+	display: flex;
+	justify-self: center;
+	align-items: center;
+	min-width: 100vh;
+}
+
+.inputs input {
+	background-color: transparent;
+	margin: 2px;
+	width: 175px;
+	height: 25px;
+	font-family: Minecraft;
+	font-size: 20px;	
+	color: black;
+}
+
+.registerform {
+	margin: 0 auto;
+	width: 380px;
+	height: 500px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-image: url("book1.png");
+	padding: 60px 50px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+#content input[type="submit"] {
+	font-family: Minecraft;
+	font-size: 20px;
+	width: 100px;
+	height: 40px;
+	cursor: pointer;
+	border: none;
+	padding: 0;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url("minecraftbutton1.png");
+	background-color: transparent;
+}
+
+#content input[type="submit"]:active {
+	color: white;
+	background-image: url("minecraftbutton2.png");
+}
